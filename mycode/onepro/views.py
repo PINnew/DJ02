@@ -3,4 +3,7 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request):
-    return HttpResponse('<h1>Мой первый проект на Django!!!</h1>')
+    return render(request, 'onepro/index.html')
+
+def new(request):
+    return render(request, 'onepro/new.html')
