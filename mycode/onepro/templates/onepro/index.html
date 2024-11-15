@@ -1,16 +1,23 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
+{% extends 'onepro/layoute.html' %}
 
+{% block title %}
+    <title>Первая страница на django</title>
+{% endblock %}
 
+{% block content %}
+<br>
+<h3>**Первый {{caption}}: Введение в веб-разработку**</h3><br>
+<p>
+    1. Django — это мощный веб-фреймворк на Python, который упрощает создание веб-приложений.<br>
+    2. В этом проекте мы создадим простое веб-приложение для управления задачами.<br>
+    3. Для начала установим Django с помощью команды `pip install django`.<br>
+    4. После установки создадим новый проект с помощью команды `django-admin startproject myproject`.<br>
+    5. Затем создадим приложение для задач с помощью команды python manage.py startapp tasks.<br>
+    6. В приложении определим модели, которые будут представлять наши задачи и их статусы.<br>
+    7. Настроим маршрутизацию, чтобы пользователи могли добавлять, редактировать и удалять задачи.<br>
+    8. Создадим простые шаблоны для отображения задач и форм для ввода данных.<br>
+    9. Запустим сервер разработки с помощью команды python manage.py runserver и откроем приложение в браузере.<br>
+    10. Поздравляем! Мы создали свое первое веб-приложение на Django и узнали основы веб-разработки.
+</p>
 
-
-</body>
-</html>
+{% endblock %}

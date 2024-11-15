@@ -3,7 +3,10 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request):
-    return render(request, 'onepro/index.html')
+    data = {
+        'caption': 'Проект на Django'
+    }
+    return render(request, 'onepro/index.html', data)
 
 def new(request):
     return render(request, 'onepro/new.html')
