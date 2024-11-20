@@ -1,0 +1,20 @@
+{% extends 'onepro/layoute.html' %}
+
+{% block title %}
+    <title>Новости</title>
+{% endblock %}
+
+{% block content %}
+<br>
+<h3>Новости</h3><br>
+{% for new in news %}
+    <div>
+        <h5> {{ new.title }} </h5>
+        <p> {{ new.short_description }} </p>
+        <p> {{ new.pub_date }} </p>
+        <p> {{ new.username }} </p>
+        <p> {{ new.text }} </p>
+    </div>
+{% endfor %}
+
+{% endblock %}
